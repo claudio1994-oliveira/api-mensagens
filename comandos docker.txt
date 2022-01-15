@@ -1,0 +1,5 @@
+docker-compose build
+docker-compose up -d
+docker exec -it api_php /bin/bash
+composer update
+php artisan migrate
