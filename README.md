@@ -1,12 +1,17 @@
 ## Descrição do projeto
 
-Uma APIRest para envio e recebimento de mensagens entre usuários cadastrados.
+Uma API para envio e recebimento de mensagens entre usuários cadastrados.
 
+### Tencnologias adotadas
+
+Lumen, Docker e Postman (Para testar a aplicação, podendo ser usado qualquer software similar.)
 
 
 ### Deployment da aplicação
 
-Comandos docker.
+O único requisito é ter o docker instalado na máquina.
+
+#### Comandos docker.
 
 Para construir as imagens, executamos o comando:
 
@@ -14,12 +19,12 @@ Para construir as imagens, executamos o comando:
 docker-compose build
 ````
 
-Para startar as os contaneres
+Para subir os contaneres
 
 ```` 
 docker-compose up -d
 ````
-Para acessar a imagem do SO para rodar as migrations
+Acessar a imagem para executar as migrations
 
 ```` 
 docker exec -it api_php /bin/bash
@@ -36,3 +41,6 @@ Para executar as migrations
 ```` 
 php artisan migrate
 ````
+#### Postman
+
+Na pasta Collection Postman existe um .json com os endpoints para teste do envio e recebimento das mensagens.
