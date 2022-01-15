@@ -11,7 +11,7 @@ Lumen, Docker e Postman (Para testar a aplicação, podendo ser usado qualquer s
 
 O único requisito é ter o docker instalado na máquina.
 
-#### Comandos docker.
+#### Comandos docker
 
 Para construir as imagens, executamos o comando:
 
